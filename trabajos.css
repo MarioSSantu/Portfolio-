@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #222;
+  font-family: Cereal, sans-serif;
+  background-color: rgb(2, 192, 128);
+}
+
+
+.Menu {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(107, 106, 106);
+  width: 100vh;
+}
+.links_menu {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(2, 192, 128);
+  width: 100vh;
+}
+
+.Menu,
+a {
+  float: right;
+  margin: 5px;
+}
+.menu_paginas {
+  font-size: 18px;
+  line-height: 1.55556;
+}
+
+.titulo_texto {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 1, 3;
+}
+.parrafo_texto {
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.imagen {
+  max-height: 50%;
+  width: 100%;
+}
+
+#cuerpo {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(2, 192, 128);
+  
+  margin-bottom: 40px;
+}
+#cuerpo div {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  background-color: rgb(2, 192, 128);
+  margin-bottom: 40px;
+}
+.contenedor_seccion{
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  flex-direction: column;
+ width: 100%;
+ background-color: rgb(2, 192, 128);
+}
+.trabajos{
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  max-height: 300px;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgb(2, 192, 128);
+}
+
+
+.pequeños_trabajos{
+display: flex;
+flex-direction: column-reverse;
+justify-content: center;
+align-items: center;
+background-color: rgb(2, 192, 128);
+}
+
+.lenguajes_conocidos{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 30px;
+  background-color: rgb(2, 192, 128);;
+}
+.lenguaje{
+margin: 30px;
+
+}
+
+.pequeños_trabajos:hover{
+
+animation: zoomtarjetas infinite linear forwards;
+}
+
+
+.lenguaje:hover{
+animation: zoom infinite linear forwards;
+}
+
+#cuerpo div:hover{
+animation: zoom  infinite linear forwards;
+}
+
+
+@keyframes zoomtarjetas {
+
+  0%{
+    
+  }
+  50%{
+      transform: scaleY(2);
+  }
+  to{
+      transform: scale(2);
+  }
+  
+}
+
+
+
+@keyframes zoom {
+0%{
+    
+}
+50%{
+    transform: scaleY(1.1);
+}
+to{
+    transform: scale(1.1);
+}
+
+  
+}
