@@ -99,10 +99,9 @@ background-color: rgb(2, 192, 128);
   padding: 30px;
   background-color: rgb(2, 192, 128);;
 }
-.lenguaje{
-margin: 30px;
 
-}
+
+
 
 .pequeños_trabajos:hover{
 
@@ -110,7 +109,7 @@ animation: zoomtarjetas infinite linear forwards;
 }
 
 
-.lenguaje:hover{
+.imagenes_grandes:hover{
 animation: zoom infinite linear forwards;
 }
 
