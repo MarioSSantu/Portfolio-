@@ -64,7 +64,8 @@ a {
 }
 .contenedor_seccion{
   display: flex;
-  padding-top: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
@@ -74,9 +75,9 @@ a {
 }
 .trabajos{
   padding-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
   max-height: 300px;
   text-align: center;
   font-size: 18px;
@@ -92,14 +93,20 @@ align-items: center;
 background-color: rgb(2, 192, 128);
 }
 
-.lenguajes_conocidos{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(2, 1fr);
-  padding: 30px;
-  background-color: rgb(2, 192, 128);;
+
+
+.imagenes_grandes{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+ 
 }
 
+.info_imagenes{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 
 
@@ -116,6 +123,30 @@ animation: zoom infinite linear forwards;
 #cuerpo div:hover{
 animation: zoom  infinite linear forwards;
 }
+
+.imagenes_grandes:hover{
+  animation: zoom_imagenes infinite linear forwards;
+}
+
+
+
+
+@keyframes zoom_imagenes {
+
+  0%{
+    
+  }
+  50%{
+      transform: scaleY(130%);
+  }
+  to{
+      transform: scale(130%);
+  }
+
+}
+  
+
+
 
 
 @keyframes zoomtarjetas {
@@ -147,3 +178,4 @@ to{
 
   
 }
+
