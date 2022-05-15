@@ -65,3 +65,7 @@ Para ello y en toda la página decidí utilizar secciones en flex que incluiría
 }
 
 ```
+
+**Habilidades** 
+
+Para los conocimientos técnicos y las soft skills creí que lo mejor era un formato visual, sin texto o con texto animado que fuera sencillo y a la vez claro y que posibilitase un rápido entendimiento del usario.

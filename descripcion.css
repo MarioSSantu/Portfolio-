@@ -110,6 +110,72 @@
 
   }
 
+  .softskills{
+    display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2, 1fr);
+      padding: 30px;
+      background-color: aquamarine;
+  }
+
+  .skill{
+
+    margin: 30px;
+
+  }
+
+
+  #escritura1{
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 30ch;
+
+    animation: maquina_escribir 2s steps(30), cursor .5s infinite step-end alternate ;
+    overflow: hidden;
+}
+
+#escritura2{
+  display: block;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 26ch;
+
+  animation: maquina_escribir 2s steps(26), cursor .5s infinite step-end alternate ;
+  overflow: hidden;
+}
+
+#escritura3{
+  display: block;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 28ch;
+
+  animation: maquina_escribir 2s steps(28), cursor .5s infinite step-end alternate ;
+  overflow: hidden;
+}
+
+#escritura4{
+  display: block;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 22ch;
+
+  animation: maquina_escribir 2s steps(22), cursor .5s infinite step-end alternate ;
+  overflow: hidden;
+}
+
+
+
+
   .formacion_apartado:hover{
 
     animation: zoom infinite linear forwards;
@@ -140,6 +206,26 @@
       
   }
 
+
+
+@keyframes maquina_escribir{
+    from{
+        width: 0;
+    }
+  
+
+
+}
+
+@keyframes cursor {
+    50% { border-color: transparent}
+}
+
+
+
+
+
+
   @media only screen and (max-width: 900px) {
 
     .formacion{
@@ -152,15 +238,25 @@
       grid-template-columns: repeat(2,1fr);
       grid-template-rows: repeat(3, 1fr);
     }
+
+    .softskills{
+      display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
     
   }
 
- @media only screen and (max-width: 500px) {
+ @media only screen and (max-width: 600px) {
 
 
     .lenguajes_conocidos{
       grid-template-columns: repeat(1,1fr);
       grid-template-rows: repeat(6, 1fr);
+    }
+
+    .softskills{
+      font-size: 20px;
     }
     
   }
